@@ -1,0 +1,77 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required":false,
+  "properties":{
+    "pluginLocations": {
+      "type":"object",
+      "required":true,
+      "properties":{
+        "config": {
+          "type":"object"
+        },
+        "course": {
+          "type":"object",
+          "properties":{
+            "_favicons": {
+              "type": "array",
+              "required": false,
+              "title": "Favicons",
+              "items": {
+                "type": "object",
+                "required": false,
+                "title": "Favicon",
+                "properties": {
+                  "_type": {
+                    "type": "string",
+                    "require": true,
+                    "title": "Mime Type",
+                    "inputType": { "type": "Select", "options": ["image/png", "image/x-icon", "image/gif"]},
+                    "validators": ["required"]
+                  },
+                  "_src": {
+                    "type": "string",
+                    "required":true,
+                    "title": "Image",
+                    "inputType": "Asset:image",
+                    "validators": ["required"],
+                    "help": "Select the image"
+                  },
+                  "_rel": {
+                    "type": "string",
+                    "require": true,
+                    "title": "Rel Attribute",
+                    "inputType": { "type": "Select", "options": ["shortcut icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
+                    "validators": ["required"],
+                    "help": "Select the image"
+                  },
+                  "_sizes": {
+                    "type":"string",
+                    "required":false,
+                    "default": "",
+                    "inputType": "Text",
+                    "validators": [],
+                    "help": "Sizes used by Apple to select for devices"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type":"object"
+        },
+        "article": {
+          "type":"object"
+        },
+        "block": {
+          "type":"object"
+        },
+        "component": {
+          "type":"object"
+        }
+      }
+    }
+  }
+}
