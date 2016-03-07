@@ -40,9 +40,9 @@ The attributes listed below are used in *course.json* to configure **Favicons**,
 No known limitations.  
 
 ----------------------------
-**Version number:**  1.0
+**Version number:**  1.0  
 **Framework versions:** ^2.0     
-**Author / maintainer:** Chuck Lorenz
+**Author / maintainer:** Chuck Lorenz  
 **Accessibility support:** NA   
 **RTL support:** NA  
 **Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), IE 11, IE10, IE9, IE8, IE Mobile 11, Safari for iPhone (iOS 7+8), Safari for iPad (iOS 7+8), Safari 8, Opera    
