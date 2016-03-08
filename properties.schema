@@ -28,6 +28,7 @@
                     "required": true,
                     "title": "Mime Type",
                     "inputType": { "type": "Select", "options": ["image/png", "image/x-icon", "image/gif"]},
+                    "default": "",
                     "validators": ["required"]
                   },
                   "_src": {
@@ -35,6 +36,7 @@
                     "required":true,
                     "title": "Image",
                     "inputType": "Asset:image",
+                    "default": "",
                     "validators": ["required"],
                     "help": "Select the image"
                   },
@@ -43,6 +45,7 @@
                     "required": true,
                     "title": "Rel Attribute",
                     "inputType": { "type": "Select", "options": ["shortcut icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
+                    "default": "",
                     "validators": ["required"],
                     "help": "Select the image"
                   },
@@ -51,6 +54,7 @@
                     "required":false,
                     "default": "",
                     "inputType": "Text",
+                    "default": "",
                     "validators": [],
                     "help": "Sizes used by Apple to select for devices"
                   }
