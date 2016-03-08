@@ -41,7 +41,7 @@ No known limitations.
 
 ----------------------------
 **Version number:**  1.0  
-**Framework versions:** ^2.0     
+**Framework versions:** ^2.0      
 **Author / maintainer:** Chuck Lorenz  
 **Accessibility support:** NA   
 **RTL support:** NA  

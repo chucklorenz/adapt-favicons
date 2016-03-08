@@ -17,7 +17,7 @@
             "_favicons": {
               "type": "array",
               "required": false,
-              "title": "Favicons",
+              "legend": "Favicons",
               "items": {
                 "type": "object",
                 "required": false,
@@ -25,7 +25,7 @@
                 "properties": {
                   "_type": {
                     "type": "string",
-                    "require": true,
+                    "required": true,
                     "title": "Mime Type",
                     "inputType": { "type": "Select", "options": ["image/png", "image/x-icon", "image/gif"]},
                     "validators": ["required"]
@@ -40,7 +40,7 @@
                   },
                   "_rel": {
                     "type": "string",
-                    "require": true,
+                    "required": true,
                     "title": "Rel Attribute",
                     "inputType": { "type": "Select", "options": ["shortcut icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
                     "validators": ["required"],
