@@ -23,11 +23,28 @@
                 "required": false,
                 "title": "Favicon",
                 "properties": {
+                  "_sizes": {
+                    "type":"string",
+                    "required":false,
+                    "title": "Sizes",
+                    "inputType": "Text",
+                    "default": "",
+                    "validators": [],
+                    "help": "Image dimension, e.g. '32x32'.  Used by Apple to select for devices."
+                  },
                   "_type": {
                     "type": "string",
                     "required": true,
                     "title": "Mime Type",
                     "inputType": { "type": "Select", "options": ["image/png", "image/x-icon", "image/gif"]},
+                    "default": "",
+                    "validators": ["required"]
+                  },
+                  "_rel": {
+                    "type": "string",
+                    "required": true,
+                    "title": "Rel Attribute",
+                    "inputType": { "type": "Select", "options": ["shortcut icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
                     "default": "",
                     "validators": ["required"]
                   },
@@ -37,26 +54,7 @@
                     "title": "Image",
                     "inputType": "Asset:image",
                     "default": "",
-                    "validators": ["required"],
-                    "help": "Select the image"
-                  },
-                  "_rel": {
-                    "type": "string",
-                    "required": true,
-                    "title": "Rel Attribute",
-                    "inputType": { "type": "Select", "options": ["shortcut icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
-                    "default": "",
-                    "validators": ["required"],
-                    "help": "Select the image"
-                  },
-                  "_sizes": {
-                    "type":"string",
-                    "required":false,
-                    "default": "",
-                    "inputType": "Text",
-                    "default": "",
-                    "validators": [],
-                    "help": "Sizes used by Apple to select for devices"
+                    "validators": ["required"]
                   }
                 }
               }
