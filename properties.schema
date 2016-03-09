@@ -34,18 +34,18 @@
                   },
                   "_type": {
                     "type": "string",
-                    "required": true,
+                    "required": false,
                     "title": "Mime Type",
-                    "inputType": { "type": "Select", "options": ["image/png", "image/x-icon", "image/gif"]},
+                    "inputType": { "type": "Select", "options": ["", "image/png", "image/x-icon", "image/gif"]},
                     "default": "",
-                    "validators": ["required"]
+                    "validators": []
                   },
                   "_rel": {
                     "type": "string",
                     "required": true,
                     "title": "Rel Attribute",
-                    "inputType": { "type": "Select", "options": ["shortcut icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
-                    "default": "",
+                    "inputType": { "type": "Select", "options": ["icon", "apple-touch-icon", "apple-touch-icon-precomposed"]},
+                    "default": "icon",
                     "validators": ["required"]
                   },
                   "_src": {
