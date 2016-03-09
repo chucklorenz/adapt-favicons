@@ -18,7 +18,6 @@
               "type": "array",
               "required": false,
               "title": "Favicons",
-              "legend": "Favicons",
               "items": {
                 "type": "object",
                 "required": false,
