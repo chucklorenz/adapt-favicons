@@ -17,6 +17,7 @@
             "_favicons": {
               "type": "array",
               "required": false,
+              "title": "Favicons",
               "legend": "Favicons",
               "items": {
                 "type": "object",
