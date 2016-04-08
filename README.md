@@ -23,6 +23,7 @@ Download **Favicons** using the "Download ZIP" button in the **Favicons** GitHub
 ### Which icon  
 
 Configure one or more types of icons: favicon, apple-touch, android-chrome, mstile. With many generators available online, creating icons is easy. If you need a suggestion, try RealFaviconGenerator.net. The html file it generates for your icons is a handy reference to use during configuration.   
+
 Not sure which icons you need? Check out these resources:  
 - [Real Favicon Generator: FAQ](http://realfavicongenerator.net/faq)  
 - [CSS-Tricks: Favicon Quiz](https://css-tricks.com/favicon-quiz/)  
@@ -72,7 +73,7 @@ The attributes listed below are used in *course.json* to configure **Favicons**,
 No known limitations.  
 
 ----------------------------
-**Version number:**  1.0  
+**Version number:**  0.0.1  
 **Framework versions:** ^2.0      
 **Author / maintainer:** Chuck Lorenz  
 **Accessibility support:** NA   
