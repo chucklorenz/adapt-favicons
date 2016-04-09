@@ -22,13 +22,15 @@ Download **Favicons** using the "Download ZIP" button in the **Favicons** GitHub
 
 ### Which icon  
 
-Configure one or more types of icons: favicon, apple-touch, android-chrome, mstile. With many generators available online, creating icons is easy. If you need a suggestion, try RealFaviconGenerator.net. The html file it generates for your icons is a handy reference to use during configuration.   
+Configure one or more types of icons: favicon, apple-touch, android-chrome. With many generators available online, creating icons is easy. If you need a suggestion, try [RealFaviconGenerator.net](http://RealFaviconGenerator.net). The html file it generates for your icons is a handy reference to use during configuration. Do not assume that all possible icons need to be used. Use only those that make sense for your project.   
 
 Not sure which icons you need? Check out these resources:  
 - [Real Favicon Generator: FAQ](http://realfavicongenerator.net/faq)  
 - [CSS-Tricks: Favicon Quiz](https://css-tricks.com/favicon-quiz/)  
 - [Wikipedia: Favicon](https://en.wikipedia.org/wiki/Favicon)
 - [iOS Developer Library: Safari Web Content Guide](https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)  
+
+Think this is more complicated than it needs to be? So does W3C. Here's the [W3C Recommendation](https://www.w3.org/TR/html5/links.html#rel-icon) for using "any" with "sizes" and a scalable icon such as an SVG image.
 
 ### Placing icons at the site root  
 
@@ -45,34 +47,35 @@ For years, favicons have been placed in the site root and unaccompanied by HTML 
 | favicon-32x32.png* | icon | image/png | 32x32 |  
 | apple-touch-icon.png*  | apple-touch-icon | *n/a* | *n/a* |  
 | apple-touch-icon-60x60.png*  | apple-touch-icon | *n/a* | 60x60 |  
-| apple-touch-icon-120x120.png*  | apple-touch-icon | *n/a* | 120x120 |  
 | apple-touch-icon-152x152.png*  | apple-touch-icon | *n/a* | 152x152 |  
-* *specific file names are necessary only if storing at root with no link* 
+\* *specific file names are necessary only if storing at root with no link* 
 
 
 ## Settings Overview
 
 The attributes listed below are used in *course.json* to configure **Favicons**, and are properly formatted as JSON in [*example.json*](https://github.com/chucklorenz/adapt-favicons/blob/master/example.json). Visit the [**Favicon** wiki](https://github.com/chucklorenz/adapt-favicons/wiki) for more information about how they appear in the [authoring tool](https://github.com/adaptlearning/adapt_authoring/wiki). 
 
+The attributes below accommodate some rare use cases. For example, currently only Firefox requires `"image/svg+xml"` as the mime-type for SVG favicons. It should not be construed from this that *all* browsers support SVG favicons&mdash;they don't.
+
 ### Attributes
 
 **_favicons** (object): The Favicons object that contains values for **_src**, **_rel**, **_type**,  and **_sizes**.  
 
->**_src** (string): This is the path to the favicon image, e.g., `"course/en/images/icons/icon-apple-touch-144x144.png"`.  
+>**_src** (string): This is the path to the favicon image, e.g., `"course/en/images/icons/icon-apple-touch-152x152.png"`.  
 
->**_rel** (string): The value of the 'rel' attribute is typically one of the following: `"icon"`, `"apple-touch-icon"`, `"apple-touch-icon-precomposed"`, `"shortcut icon"`.  
+>**_rel** (string): The value of the 'rel' attribute is typically one of the following: `"icon"`, `"apple-touch-icon"`, `"apple-touch-icon-precomposed"`, `"shortcut icon"`, `"mask-icon"`.  
 
->**_type** (string):  The mime type for icons is based on the file format of the favicon. For PNG, use `"image/png"`. For GIF, use `"image/gif"`. For ICO, use `"image/x-icon"` (or `"image/vnd.microsoft.icon"`). The value you provide here is simply transferred to the 'rel' attribute; no validation is done.
+>**_type** (string):  The mime type for icons is based on the file format of the favicon. For PNG, use `"image/png"`. For GIF, use `"image/gif"`. For ICO, use `"image/x-icon"` (or `"image/vnd.microsoft.icon"`). For SVG, use `"image/svg+xml"`. The value you provide here is simply transferred to the 'rel' attribute; no validation is done.
 
->**_sizes** (string): The dimension of the favicon, e.g., `"144x144"`. This optional attribute is used in conjunction with `"apple-touch-icon"`.
+>**_sizes** (string): The dimension of the favicon, e.g., `"152x152"`. This optional attribute is used in conjunction with `"apple-touch-icon"`.
 
 <div float align=right><a href="#top">Back to Top</a></div>
 
 ## Limitations
  
-No known limitations.  
+"mstile" and its meta tag are not yet been implemented.  
 
-----------------------------
+----------------------------  
 **Version number:**  0.0.1  
 **Framework versions:** ^2.0      
 **Author / maintainer:** Chuck Lorenz  

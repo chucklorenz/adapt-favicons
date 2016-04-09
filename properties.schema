@@ -37,7 +37,7 @@
                                       "type": "string",
                                       "required": false,
                                       "title": "Mime Type",
-                                      "inputType": { "type": "Select", "options": ["", "image/png", "image/x-icon", "image/gif", "image/vnd.microsoft.icon"]},
+                                      "inputType": { "type": "Select", "options": ["", "image/png", "image/x-icon", "image/svg+xml", "image/gif", "image/vnd.microsoft.icon"]},
                                       "default": "",
                                       "validators": []
                                   },
@@ -45,7 +45,7 @@
                                       "type": "string",
                                       "required": true,
                                       "title": "Rel Attribute",
-                                      "inputType": { "type": "Select", "options": ["", "icon", "apple-touch-icon", "apple-touch-icon-precomposed", "shortcut icon"]},
+                                      "inputType": { "type": "Select", "options": ["", "icon", "apple-touch-icon", "apple-touch-icon-precomposed", "shortcut icon", "mask-icon"]},
                                       "default": "",
                                       "validators": ["required"]
                                   },
